@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Card compra</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="src/css/utils.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <main class="w-full h-screen bg-primaryBG flex justify-center items-center">
+            <div class="w-[60%] h-[60%] p-[8px] bg-white rounded-[20px] flex items-center shadow-custom justify-between">
+                <!-- IMAGE DIV -->
+                <div class="h-[80%] w-[50%] bg-white rounded-md flex flex-col justify-center items-center">
+                    <img id="imgId" class="w-[400px]" src="src/img/Bege.jpg">
+                </div>
+
+                <div class="w-[50%] h-[100%] flex justify-center flex-col items-start rounded-[20px]">
+                    <h1 class="mt-5 text-3xl">Tenis Masculino Sapatenis da Polo Open</h1>
+
+                    <div class="mt-5 mb-5">
+                        <span class="text-xs">R$</span>
+                        <span class="text-3xl font-semibold">69</span>
+                        <span class="text-xs">90</span><br>
+                        <span class="text-sm font-semibold">Em até 2x R$ 34,95 sem juros</span>
+                    </div>
+
+                    <div class="mt-5 w-[85%] flex flex-col">
+                        <p class="text-sm mb-3">Cor: <span id="cor" class="text-sm font-bold uppercase">Bege</span></p>
+                        <div class="flex gap-4">
+                            <div id="DivBege">
+                                <img class="w-full h-[100%]" src="src/img/Bege.jpg">
+                            </div>
+                            <div id="DivGrafite">
+                                <img class="w-full h-[100%]" src="src/img/Grafite.jpg">
+                            </div>
+                            <div id="DivMarrom">
+                                <img class="w-full h-[100%]" src="src/img/Marrom.jpg">
+                            </div>
+                            <div id="DivMarinho">
+                                <img class="w-full h-[100%]" src="src/img/Marinho.jpg">
+                            </div>
+                            <div id="DivBranco">
+                                <img class="w-full h-[100%]" src="src/img/Branco.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 w-[60%] flex flex-col">
+                        <p class="text-sm mb-3">Tamanho: <span id="numeracao" class="text-sm font-bold">38</span></p>
+                        <div class="flex gap-4">
+                            <button id="btn38" class="w-[50px] h-[50px] bg-white p-[10px] shadow-button rounded-full hover:bg-buttonClick transitions">38</button>
+                            <button id="btn39" class="w-[50px] h-[50px] bg-white p-[10px] shadow-button rounded-full hover:bg-buttonClick transitions">39</button>
+                            <button id="btn40" class="w-[50px] h-[50px] bg-white p-[10px] shadow-button rounded-full hover:bg-buttonClick transitions">40</button>
+                            <button id="btn41" class="w-[50px] h-[50px] bg-white p-[10px] shadow-button rounded-full hover:bg-buttonClick transitions">41</button>
+                            <button id="btn42" class="w-[50px] h-[50px] bg-white p-[10px] shadow-button rounded-full hover:bg-buttonClick transitions">42</button>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex justify-around p-5 ">
+                        <button class="p-4 w-[40%] h-[100%] bg-secondary text-white rounded-xl shadow-button hover:bg-terc transitions">Ver mais</button>
+                        <button class="p-4 w-[40%] h-[100%] bg-primary text-white rounded-xl shadow-button hover:bg-green-900 transitions">Comprar agora</button>
+                        <button class=" w-[10%] h-[100%] bg-icon text-white rounded-xl shadow-button transitions hover:bg-white hover:text-black ">
+                            <i class="fas fa-shopping-cart "></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </main> 
+    </body>
+    <script type="module" src="src/js/main.js" defer> </script>
+    <script>
+    tailwind.config = {
+        theme: {
+        extend: {
+            colors: {
+            primaryBG: '#f7f7f7',
+            buttonClick: '#e9e9e9',
+            primary: '#5e9188',
+            secondary: '#3e5954',
+            terc: '#253342',
+            icon: '#232226'
+            }
+        }
+        }
+    }
+    </script>
+</html>
